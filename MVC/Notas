@@ -1,0 +1,9 @@
+Arquitetura MVC (Model, View, Controller)
+
+Model: Responsável pelos dados e regras de negócio;
+View: Responsável pela apresentação;
+Controller: Responsável pelo intermédio entre o Model e a View;
+
+Obs. Após refletir decidi que o Controller será responsável por montar 
+as funções de impressão para que a View as chame, e receber os inputs 
+da View e mandar para o Model;
