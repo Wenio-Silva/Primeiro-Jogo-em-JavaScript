@@ -1,4 +1,5 @@
 import { ctx, LARGURA, ALTURA, chao, Personagem, obstaculos, estadoAtual, estados, record, leveln, atualiza, main } from "./Model.js";
+import { teste } from "./Sprites.js";
 
 //Declara o objeto como a unica exportação do arquivo
 export var impressao = {
@@ -74,11 +75,14 @@ export var impressao = {
     
         this.desenhaObstaculos();
 
+        // chao.desenha(0, 550);
         this.desenhaChao();
     
         this.desenhaPersonagem();
         
         this.desenhaPontuacao();
+
+        teste.desenha(0, 0);
     },
 
     //Atualiza os sprites a cada frame

@@ -1,7 +1,7 @@
 //variaveis do jogo
 export var canvas, ctx, ALTURA, LARGURA, frames = 0,
 maxPulos = 1, velocidade = 6, estadoAtual, record,
-TOUCH = 0, leveln = 0,
+TOUCH = 0, leveln = 0, img,
 
 estados = {
 	jogar: 0,
@@ -205,6 +205,9 @@ export function main() {
 	if (record == null){
 		record = 0;
 	}
+
+	img = new Image();
+	img.src = "imagens/SpritesPNG.png";
 }
 
 export function atualiza() {
