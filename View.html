@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Pula-Pula</title>
+		<style>
+			body {
+				background-color: black;
+			}
+
+			canvas {
+				position: absolute;
+				top: 0px;
+				bottom: 0px;
+				left: 0px;
+				right: 0px;
+				margin: auto;
+			};
+		</style>
+	</head>
+	<body> 
+		<div>
+			<script type="module">
+				import { impressao, bigMain } from "./Controller.js";
+				
+				//inicializa o jogo
+				bigMain();
+				
+				//imprime as imagens a cada frame
+				impressao.roda();
+            </script>
+        </div>
+    </body>
+</html>
